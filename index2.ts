@@ -32,5 +32,5 @@ const locations = [
 
 	const server = new GraphQLServer({ typeDefs, resolvers })
 	server.start({port: 4040}, () =>
-		console.log(`Your GraphQL server is running now ...`),
+		console.log(`Your GraphQL server is running now at http://localhost:4040 ...`),
 	)
