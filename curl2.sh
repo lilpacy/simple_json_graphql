@@ -5,6 +5,6 @@ curl 'http://localhost:4001/' \
 -H 'Connection: keep-alive' \
 -H 'DNT: 1' \
 -H 'Origin: http://localhost:4001' \
---data-binary '{"query":"# Write your query or mutation here\n{\n  locations {\n    Japanese\n    Prefecture\n    Population\n    Homepage\n    Area\n  }\n}"}' \
+--data-binary '{"query":"# Write your query or mutation here\n{\n  location(Japanese: \"名古屋市\") {\n    Japanese\n  }\n}"}' \
 --compressed
-# locationsのリクエスト
+# 名古屋市を指定してlocationをリクエスト
